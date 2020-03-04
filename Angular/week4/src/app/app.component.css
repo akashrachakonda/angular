@@ -1,0 +1,17 @@
+.h1 {
+  margin-left: 300px;
+  font-size: 2rem;
+}
+
+.jumbotron {
+  width: 1000px;
+  height: 600px;
+  margin-left: 180px;
+}
+
+.div1 {
+  background-color: white;
+  margin-left: 350px;
+  width: 200px;
+  height: 380px;
+}

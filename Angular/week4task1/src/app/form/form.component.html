@@ -1,0 +1,10 @@
+<div >
+    <label >First Name:-</label>
+    <input type="text" class="form-control" [(ngModel)]="fname" [value]="fname" #input1>
+
+
+    <label>Last Name:-</label>
+    <input type="text" class="form-control"  [(ngModel)]="lname" [value]="lname" #input2>
+ <br>
+  <button class="btn btn-primary" (click)="sendDetails()">Add User</button>
+</div>
