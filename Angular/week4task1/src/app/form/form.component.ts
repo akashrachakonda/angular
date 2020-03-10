@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import{InteractionService} from '../interaction.service';
 import { ViewChild } from '@angular/core';
 
-@Component({
+@Component({  
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
