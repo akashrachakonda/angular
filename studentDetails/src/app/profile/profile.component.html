@@ -1,0 +1,49 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="div1">
+
+      <div class="div2">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input required minlength=5 maxlength=10 name="firstName" type="text" class="form-control"
+            [(ngModel)]="firstName" >
+        </div>
+
+        <div class="form-group">
+          <label for="LastName">Last Name</label>
+          <input type="text" class="form-control" id="LastName" [(ngModel)]="LastName" name="LastName" >
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="example@gmail.com" [(ngModel)]="email"
+            name="email" >
+        </div>
+
+        <div class="form-group">
+          <label for="phno">Phone No</label>
+          <input type="tel" class="form-control" id="phno" [(ngModel)]="phno" name="phno" >
+        </div>
+
+
+
+        <label for="gender">Gender&nbsp;&nbsp;&nbsp;</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="inlineRadio1" value="male" [(ngModel)]="gender" name="gender">
+          <label class="form-check-label" for="inlineRadio1">Male</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="inlineRadio2" value="female" [(ngModel)]="gender"
+            name="gender">
+          <label class="form-check-label" for="inlineRadio2">Female</label>
+        </div>
+
+
+        <br>
+        <input class="btn btn-primary" type="submit" value="Save" (click)="edit()">
+      </div>
+
+
+    </div>
+  </div>
+</div>
