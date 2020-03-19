@@ -60,6 +60,20 @@ router.get('/user-ret/singleData/:id',function(req,res){
     });
     
 });
+router.get('/user-filter/:name',function(req,res){
+    console.log('Get request for Filter User');
+    User.find({"firstName":req.params.name})
+    .exec(function(err, users){
+        if(err){
+            console.log("Error retrieving filtered users");
+        }else {
+            console.log("successfully retrieved user details");
+            console.log(users);
+            res.json(users);
+        }
+    });
+    
+});
 
 
 

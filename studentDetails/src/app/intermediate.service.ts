@@ -76,6 +76,12 @@ export class IntermediateService {
 
        }
 
+       filterName:any;
+       filterData(name:any):any{
+        this.filterName=name;
+        return this.http.get('http://localhost:3000/api/user-filter/'+this.filterName);
+
+       }
 
 
 

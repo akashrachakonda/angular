@@ -11,7 +11,7 @@ export class ShowDetailsComponent implements OnInit{
 
   constructor(private intermediate:IntermediateService,private route:Router,private loc:Location) { }
 
-  
+  name:string;
 
   firstName:string;
   LastName:string;
@@ -60,6 +60,16 @@ export class ShowDetailsComponent implements OnInit{
 
     this.onLoad();
    
+  }
+
+filteredDetails:any;
+
+  filter()
+  {
+    this.intermediate.filterData(this.name).subscribe(data => {
+      console.log(data);
+      this.filteredDetails=data;
+    } );
   }
 
 
